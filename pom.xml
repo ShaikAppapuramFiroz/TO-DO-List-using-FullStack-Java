@@ -42,8 +42,7 @@
             <scope>runtime</scope>
         </dependency>
 
-<!--         <!-- Lombok (optional) -->
-        <dependency>
+<!--<dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
