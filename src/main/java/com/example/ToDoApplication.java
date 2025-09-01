@@ -6,8 +6,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ToDoApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ToDoApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        System.out.println("DATABASE_URL=" + System.getenv("DATABASE_URL"));
+        System.out.println("DATABASE_USERNAME=" + System.getenv("DATABASE_USERNAME"));
+		System.out.println("DATABASE_USERNAME=" + System.getenv("DATABASE_PASSWORD"));
+        SpringApplication.run(ToDoApplication.class, args);
+    }
 }
+
