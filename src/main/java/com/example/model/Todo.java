@@ -16,7 +16,18 @@ public class Todo {
     private LocalTime time;
     private boolean completed = false;
 
-    // getters and setters
+    // ✅ Required by JPA
+    public Todo() {}
+
+    // Optional constructor for convenience
+    public Todo(String task, LocalDate date, LocalTime time, boolean completed) {
+        this.task = task;
+        this.date = date;
+        this.time = time;
+        this.completed = completed;
+    }
+
+    // Getters and Setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
