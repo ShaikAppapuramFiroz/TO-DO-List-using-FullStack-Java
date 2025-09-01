@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 @Entity
+@Table(name = "todos")
 public class Todo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
